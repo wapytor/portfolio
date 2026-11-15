@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wapytor Makes Stuff</title>
 <meta name="description" content="Free tools by Chaz: Lyric Glow and FreeCut.">
+<link rel="icon" href="wapytor.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -33,6 +34,7 @@ nav a:hover{color:var(--text)}
 .btn.ghost:hover{background:var(--surface);border-color:var(--violet)}
 .hero{padding:96px 0 72px;text-align:center}
 .pill{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:.8rem;color:var(--muted);background:var(--surface);margin-bottom:24px}
+.avatar{display:block;width:120px;height:120px;margin:0 auto 22px;border-radius:50%;object-fit:cover;border:3px solid var(--bg);box-shadow:0 0 0 3px var(--violet),0 14px 44px -8px rgba(255,79,163,.6)}
 .hero h1{font-size:clamp(2.6rem,7vw,5rem);max-width:800px;margin:0 auto 20px}
 .grad{background:linear-gradient(90deg,var(--pink),var(--violet),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:1.1rem}
@@ -134,12 +136,14 @@ footer{padding:36px 0;color:var(--muted);font-size:.88rem;text-align:center;bord
 </div></nav>
 
 <header class="hero wrap" id="top">
+  <img class="avatar" src="wapytor.jpg" alt="Wapytor mascot" width="120" height="120">
   <span class="pill">Free. No accounts. No paywalls.</span>
   <h1>Tools I built because I <span class="grad">wanted them.</span></h1>
   <p>A lyrics visualiser that makes your desk setup look insane, and a video editor that doesn't ask for your wallet.</p>
   <div class="row">
     <a class="btn primary" href="#lyric-glow">Lyric Glow</a>
     <a class="btn ghost" href="#freecut">FreeCut</a>
+    <a class="btn ghost" href="https://discord.gg/hgJbdhZFnz" target="_blank" rel="noopener">Join the community</a>
   </div>
 </header>
 
@@ -249,7 +253,10 @@ footer{padding:36px 0;color:var(--muted);font-size:.88rem;text-align:center;bord
 <section><div class="wrap"><div class="cta">
   <h2>Like what you see?</h2>
   <p>Everything's free. If it saved you some time or made your setup look cooler, a coffee keeps the next thing coming.</p>
-  <a class="btn primary" href="https://ko-fi.com/raptormakesstuff" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+    <a class="btn primary" href="https://discord.gg/hgJbdhZFnz" target="_blank" rel="noopener">Join the Discord</a>
+    <a class="btn ghost" href="https://ko-fi.com/raptormakesstuff" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
+  </div>
 </div></div></section>
 
 <footer>Made by Chaz · Wapytor Makes Stuff</footer>
