@@ -75,6 +75,19 @@ section{padding:72px 0}
 .head{position:absolute;top:0;bottom:0;left:38%;width:2px;background:#fff;z-index:2;animation:scrub 6s linear infinite alternate}
 @keyframes scrub{to{left:78%}}
 .timeline{position:relative;display:grid;gap:6px}
+/* Ground Zero mock */
+.gz{display:grid;place-items:center;padding:6%;background:radial-gradient(circle at 70% 20%,rgba(251,191,36,.18),transparent 60%),#0f0e17}
+.dc{width:100%;max-width:340px;background:#1a1828;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -20px rgba(0,0,0,.9)}
+.dc .ban{height:84px;background:linear-gradient(180deg,#3a3846,#17151f)}
+.dc .body{padding:0 20px 20px}
+.dc .ico{width:64px;height:64px;border-radius:16px;margin-top:-32px;border:4px solid #1a1828;background:linear-gradient(135deg,#222,#000);display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;color:var(--amber);font-size:1.3rem}
+.dc h3{font-size:1.25rem;margin:10px 0 4px;font-style:italic}
+.dc .st{display:flex;gap:14px;font-size:.8rem;color:var(--muted);margin-bottom:10px}
+.dc .st b{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;background:#4ade80}
+.dc .st b.g{background:#8a8799}
+.dc p{font-size:.8rem;color:var(--muted);line-height:1.5;margin-bottom:12px}
+.dc .tg{display:flex;flex-wrap:wrap;gap:6px}
+.dc .tg span{font-size:.7rem;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--text)}
 /* about */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
@@ -96,7 +109,7 @@ footer{padding:36px 0;color:var(--muted);font-size:.88rem;text-align:center;bord
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top">Raptor<span>.</span>makes<span>.</span>stuff</a>
-  <ul><li><a href="#lyric-glow">Lyric Glow</a></li><li><a href="#freecut">FreeCut</a></li><li><a href="#about">About</a></li></ul>
+  <ul><li><a href="#lyric-glow">Lyric Glow</a></li><li><a href="#freecut">FreeCut</a></li><li><a href="#dayz">DayZ</a></li><li><a href="#about">About</a></li></ul>
   <a class="btn ghost" href="https://ko-fi.com/raptormakesstuff" target="_blank" rel="noopener">☕ Support</a>
 </div></nav>
 
@@ -160,6 +173,36 @@ footer{padding:36px 0;color:var(--muted);font-size:.88rem;text-align:center;bord
       <div class="track"><i style="--c:#8b5cf6;left:2%;width:38%"></i><i style="--c:#ec4899;left:42%;width:30%"></i><i style="--c:#8b5cf6;left:74%;width:22%"></i></div>
       <div class="track"><i style="--c:#22d3ee;left:10%;width:50%"></i><i style="--c:#0ea5e9;left:64%;width:25%"></i></div>
       <div class="track"><i style="--c:#fbbf24;left:0;width:92%;opacity:.7"></i></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="dayz"><div class="wrap project">
+  <div>
+    <div class="eyebrow" style="color:var(--amber)">Community</div>
+    <h2>Ground Zero DayZ</h2>
+    <p class="lead">An Xbox DayZ server and Discord community focused on custom content, progression, PvP and exploration. Running since December 2024 with nearly a thousand survivors.</p>
+    <ul class="feats" style="--c:var(--amber)">
+      <li>5X Chernarus and Nasdara servers</li>
+      <li>Custom content and a progression system to grind through</li>
+      <li>PvP and exploration across both maps</li>
+      <li>Weekend raids and community events</li>
+    </ul>
+    <div class="tags"><span>DayZ</span><span>Xbox</span><span>Chernarus</span><span>Nasdara</span><span>Weekend raid</span></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn primary" href="https://discord.gg/3YhSdVwS2S" target="_blank" rel="noopener" style="background:linear-gradient(135deg,var(--amber),#ef4444);color:#1a1100;box-shadow:0 8px 28px -8px rgba(251,191,36,.5)">Join the Discord</a>
+    </div>
+  </div>
+  <div class="visual gz" aria-hidden="true">
+    <div class="dc">
+      <div class="ban"></div>
+      <div class="body">
+        <div class="ico">GZ</div>
+        <h3>Ground Zero DayZ</h3>
+        <div class="st"><span><b></b>100+ online</span><span><b class="g"></b>970+ members</span></div>
+        <p>XBOX Ground Zero is a 5X Chernarus &amp; Nasdara DayZ server focused on custom content, progression, PvP and exploration.</p>
+        <div class="tg"><span>DayZ</span><span>weekend raid</span><span>Xbox</span><span>Nasdara</span><span>Chernarus</span></div>
+      </div>
     </div>
   </div>
 </div></section>
